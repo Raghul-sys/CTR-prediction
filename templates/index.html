@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impression Prediction</title>
+</head>
+    <body>
+        <form action="{{ url_for('predict')}}" method="post">
+        <h1>content for prediction</h1>
+        
+        
+        <label for="state-select">Choose a state:</label>
+
+        <select name="states" id="state-select">
+            <option value="State_Alabama">State_Alabama</option>
+            <option value="State_Alaska">State_Alaska</option>
+            <option value="State_Arizona">State_Arizona</option>
+            <option value="State_Arkansas">State_Arkansas</option>
+            <option value="State_California">State_California</option>
+            <option value="State_Colorado">State_Colorado</option>
+            <option value="State_Connecticut">State_Connecticut</option>
+            <option value="State_Delaware">State_Delaware</option>
+            <option value="State_District of Columbia">State_District of Columbia</option>
+            <option value="State_Florida">State_Florida</option>
+            <option value="State_Georgia">State_Georgia</option>
+            <option value="State_Hawaii">State_Hawaii</option>
+            <option value="State_Idaho">State_Idaho</option>
+            <option value="State_Illinois">State_Illinois</option>
+            <option value="State_Indiana">State_Indiana</option>
+            <option value="State_Iowa">State_Iowa</option>
+            <option value="State_Kansas">State_Kansas</option>
+            <option value="State_Kentucky">State_Kentucky</option>
+            <option value="State_Louisiana">State_Louisiana</option>
+            <option value="State_Maine">State_Maine</option>
+            <option value="State_Maryland">State_Maryland</option>
+            <option value="State_Massachusetts">State_Massachusetts</option>
+            <option value="State_Michigan">State_Michigan</option>
+            <option value="State_Minnesota">State_Minnesota</option>
+            <option value="State_Mississippi">State_Mississippi</option>
+            <option value="State_Missouri">State_Missouri</option>
+            <option value="State_Montana">State_Montana</option>
+            <option value="State_Nebraska">State_Nebraska</option>
+            <option value="State_Nevada">State_Nevada</option>
+            <option value="State_New Hampshire">State_New Hampshire</option>
+            <option value="State_New Jersey">State_New Jersey</option>
+            <option value="State_New Mexico">State_New Mexico</option>
+            <option value="State_New York">State_New York</option>
+            <option value="State_North Carolina">State_North Carolina</option>
+            <option value="State_North Dakota">State_North Dakota</option>
+            <option value="State_Ohio">State_Ohio</option>
+            <option value="State_Oklahoma">State_Oklahoma</option>
+            <option value="State_Oregon">State_Oregon</option>
+            <option value="State_Pennsylvania">State_Pennsylvania</option>
+            <option value="State_Rhode Island">State_Rhode Island</option>
+            <option value="State_South Carolina">State_South Carolina</option>
+            <option value="State_South Dakota">State_South Dakota</option>
+            <option value="State_Tennessee">State_Tennessee</option>
+            <option value="State_Texas">State_Texas</option>
+            <option value="State_Utah">State_Utah</option>
+            <option value="State_Vermont">State_Vermont</option>
+            <option value="State_Virginia">State_Virginia</option>
+            <option value="State_Washington">State_Washington</option>
+            <option value="State_West Virginia">State_West Virginia</option>
+            <option value="State_Wisconsin">State_Wisconsin</option>
+            <option value="State_Wyoming">State_Wyoming</option>
+         </select>
+         <label for="exchange-select">Choose an Exchange:</label>
+        <select name="Exchange" id="exchange-select">
+            <option value="exc_Aol">Aol</option>
+            <option value="exc_AppNexus">AppNexus</option>
+            <option value="exc_FreeWheel">FreeWheel</option>
+            <option value="exc_GoogleAdx">GoogleAdx</option>
+            <option value="exc_Index">Index</option>
+            <option value="exc_Lkqd">Lkqd</option>
+            <option value="exc_MoPub">MoPub</option>
+            <option value="exc_Nexage">Nexage</option>
+            <option value="exc_OpenX">OpenX</option>
+            <option value="exc_Revvid">Revvid</option>
+            <option value="exc_Rubicon">Rubicon</option>
+            <option value="exc_SpotX2">SpotX2</option>
+            <option value="exc_Telaria">Telaria</option>
+        </select>
+
+          <label for="xyz">Ad Type</label>
+        <select name="adtype" id="adtype-select">
+            <option value="adtype_1">Adtype1</option>
+            <option value="adtype_2">Adtype2</option>
+            <option value="adtype_3">Adtype3</option>
+        </select>
+
+
+
+        
+        <input type="submit" value="submit">
+        </form>
+
+        <h3>{{prediction_text}}</h3>
+        
+        
+    
+    </body>
+</html>
+
+
+
+
+
